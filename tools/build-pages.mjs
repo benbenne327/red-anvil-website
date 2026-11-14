@@ -46,6 +46,10 @@ ${body.trim()}
       <a href="/privacy.html">Privacy</a>
       <a href="/terms.html">Terms</a>
     </nav>
+    <div class="foot-social">
+      <p><span>Campaign Hall</span> <a href="https://www.youtube.com/@CampaignHall" rel="noopener" target="_blank" aria-label="Campaign Hall on YouTube">YouTube</a> <a href="https://bsky.app/profile/campaignhall.bsky.social" rel="noopener" target="_blank" aria-label="Campaign Hall on Bluesky">Bluesky</a> <a href="https://www.instagram.com/campaignhallapp/" rel="noopener" target="_blank" aria-label="Campaign Hall on Instagram">Instagram</a> <a href="https://www.tiktok.com/@campaign.hall" rel="noopener" target="_blank" aria-label="Campaign Hall on TikTok">TikTok</a> <a href="https://x.com/campaignhall" rel="noopener" target="_blank" aria-label="Campaign Hall on X">X</a> <a href="https://www.facebook.com/campaignhallapp" rel="noopener" target="_blank" aria-label="Campaign Hall on Facebook">Facebook</a></p>
+      <p><span>Studio</span> <a href="https://bsky.app/profile/redanvildigital.bsky.social" rel="noopener" target="_blank" aria-label="Red Anvil Digital Works on Bluesky">Bluesky</a></p>
+    </div>
     <p>© 2026 Red Anvil Digital Works. All rights reserved.</p>
   </div>
 </footer>

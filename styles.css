@@ -121,6 +121,20 @@ a:focus-visible, .btn:focus-visible { outline: 3px solid var(--flame); outline-o
 .contact-card p { color: var(--muted); font-size: 1rem; }
 .contact-card .mail { color: var(--text); font-weight: 700; font-size: clamp(1rem, 2.2vw, 1.1875rem); overflow-wrap: anywhere; text-decoration: underline; text-decoration-color: var(--ember); text-underline-offset: 6px; margin-top: 6px; }
 
+/* Social links */
+.pills { display: flex; flex-wrap: wrap; gap: 8px; }
+.pill { display: inline-flex; align-items: center; min-height: 40px; padding: 8px 14px; border-radius: 999px; border: 1px solid #454b4f; color: var(--text); text-decoration: none; font-size: .9375rem; font-weight: 600; transition: border-color .15s, background .15s; }
+.pill:hover { border-color: var(--ember); background: rgba(251, 76, 63, .08); }
+.hall-follow { display: grid; gap: 12px; margin-top: 22px; }
+.hall-follow > p { font-family: var(--mono); font-size: .8125rem; letter-spacing: .1em; text-transform: uppercase; color: #a9b3b9; }
+.hall .pill { border-color: rgba(227, 185, 85, .45); color: var(--hall-cream); }
+.hall .pill:hover { border-color: var(--hall-gold); background: rgba(227, 185, 85, .1); }
+.follow-card { grid-column: 1 / -1; }
+.follow-card .follow-label { font-family: var(--mono); font-size: .75rem; letter-spacing: .12em; text-transform: uppercase; color: #8f979b; margin-top: 8px; }
+.foot-social { flex-basis: 100%; display: grid; gap: 6px; font-size: .875rem; }
+.foot-social p { display: flex; flex-wrap: wrap; gap: 4px 16px; align-items: center; }
+.foot-social span { color: #8f979b; font-family: var(--mono); font-size: .75rem; letter-spacing: .1em; text-transform: uppercase; min-width: 7.5rem; }
+
 /* Footer */
 .site-footer { border-top: 1px solid var(--line); padding-block: 36px 44px; font-size: .9375rem; color: var(--muted); }
 .site-footer .wrap { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 18px 32px; align-items: center; }
