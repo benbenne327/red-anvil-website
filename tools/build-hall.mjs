@@ -16,8 +16,8 @@ const social = (url, title, description) => `
 <meta property="og:url" content="${url}">
 <meta property="og:image" content="${SITE}/assets/campaign-hall-share.jpg">
 <meta property="og:image:width" content="1200">
-<meta property="og:image:height" content="636">
-<meta property="og:image:alt" content="Campaign Hall logo and tagline over four early concept-art characters">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Campaign Hall logo and tagline: The easy way to run and play tabletop RPGs at your table.">
 <meta name="twitter:card" content="summary_large_image">`;
 
 const shot = (file, alt, w = 640, h) =>
@@ -150,8 +150,7 @@ ${feature("fights", "Fights", "Fights run on everyone's phone.", `
           <li>Conditions and death saves track themselves.</li>
           <li>Players see foes as Unhurt, Hurt, Bloodied, or Down, never their exact HP.</li>
         </ul>`,
-  shot("fight-turn", "A player's turn on a phone: Action, Bonus action, Move and Reaction chips, and a Choose action button.", 640, 776) +
-  shot("turn-order", "The turn order on a player's phone: two goblins marked Unhurt, then Bram, Mira and Lyra with their HP bars.", 640, 690))}
+  shot("fight-turn", "A player's turn on a phone: Action, Bonus action, Move and Reaction chips, and a Choose action button.", 640, 776))}
 ${feature("dice", "Dice", "Your real dice come first.", `
         <p>Real dice stay on the table. When it's time to roll, type what your die shows. Campaign Hall adds your modifier, shows the GM the total, and doubles the dice on a crit.</p>
         <p>Forgot your dice bag? <strong>"Roll for me"</strong> is right underneath. The app rolls once and records it.</p>`,
