@@ -1,58 +1,17 @@
 // Builds privacy.html, terms.html and 404.html so they share one header and footer.
 // Run from the Website folder:  node tools/build-pages.mjs
 import { writeFileSync } from "node:fs";
+import { head, header, footer } from "./site-chrome.mjs";
 
-const page = (title, description, extraHead, body) => `<!doctype html>
-<html lang="en-US">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>${title} — Red Anvil Digital Works</title>
-<meta name="description" content="${description}">
-${extraHead}
-<meta name="theme-color" content="#101213">
-<link rel="icon" href="/favicon.ico" sizes="any">
-<link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32.png">
-<link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
-<link rel="stylesheet" href="/styles.css">
-</head>
+const page = (title, description, extraHead, body) => `${head({ title: `${title} — Red Anvil Digital Works`, description, extra: extraHead })}
 <body>
-<a class="skip" href="#main">Skip to content</a>
-<header class="site-header">
-  <div class="wrap">
-    <a class="brand" href="/" aria-label="Red Anvil Digital Works, home">
-      <img src="/assets/anvil-mark.png" width="40" height="40" alt="">
-      <span class="brand-name">RED ANVIL<span>DIGITAL WORKS</span></span>
-    </a>
-    <nav class="nav" aria-label="Main">
-      <a href="/#campaign-hall">Campaign Hall</a>
-      <a href="/#projects">Projects</a>
-      <a href="/#studio">Studio</a>
-      <a class="nav-cta" href="/#contact">Contact</a>
-    </nav>
-  </div>
-</header>
+${header()}
 <main id="main" class="legal">
   <div class="wrap">
 ${body.trim()}
   </div>
 </main>
-<footer class="site-footer">
-  <div class="wrap">
-    <div class="foot-brand"><img src="/assets/anvil-mark.png" width="28" height="28" alt="">Red Anvil Digital Works</div>
-    <nav aria-label="Footer">
-      <a href="mailto:support@redanvildigital.com">support@redanvildigital.com</a>
-      <a href="mailto:info@redanvildigital.com">info@redanvildigital.com</a>
-      <a href="/privacy.html">Privacy</a>
-      <a href="/terms.html">Terms</a>
-    </nav>
-    <div class="foot-social">
-      <p><span>Campaign Hall</span> <a href="https://www.youtube.com/@CampaignHall" rel="noopener" target="_blank" aria-label="Campaign Hall on YouTube">YouTube</a> <a href="https://bsky.app/profile/campaignhall.bsky.social" rel="noopener" target="_blank" aria-label="Campaign Hall on Bluesky">Bluesky</a> <a href="https://www.instagram.com/campaignhallapp/" rel="noopener" target="_blank" aria-label="Campaign Hall on Instagram">Instagram</a> <a href="https://www.tiktok.com/@campaign.hall" rel="noopener" target="_blank" aria-label="Campaign Hall on TikTok">TikTok</a> <a href="https://x.com/campaignhall" rel="noopener" target="_blank" aria-label="Campaign Hall on X">X</a> <a href="https://www.facebook.com/campaignhallapp" rel="noopener" target="_blank" aria-label="Campaign Hall on Facebook">Facebook</a></p>
-      <p><span>Studio</span> <a href="https://bsky.app/profile/redanvildigital.bsky.social" rel="noopener" target="_blank" aria-label="Red Anvil Digital Works on Bluesky">Bluesky</a></p>
-    </div>
-    <p>© 2026 Red Anvil Digital Works. All rights reserved.</p>
-  </div>
-</footer>
+${footer()}
 </body>
 </html>
 `;
