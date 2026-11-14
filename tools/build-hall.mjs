@@ -16,8 +16,8 @@ const social = (url, title, description) => `
 <meta property="og:url" content="${url}">
 <meta property="og:image" content="${SITE}/assets/campaign-hall-share.jpg">
 <meta property="og:image:width" content="1200">
-<meta property="og:image:height" content="675">
-<meta property="og:image:alt" content="Campaign Hall logo and tagline over four concept-art characters">
+<meta property="og:image:height" content="636">
+<meta property="og:image:alt" content="Campaign Hall logo and tagline over four early concept-art characters">
 <meta name="twitter:card" content="summary_large_image">`;
 
 const shot = (file, alt, w = 640, h) =>
@@ -49,7 +49,8 @@ const followBlock = `
     </div>
   </section>`;
 
-const shotNote = `<p class="shot-note">Screenshots are from the app in testing. Character portraits and artwork are AI-generated concept art, to be redone by human artists.</p>`;
+const ART_LINE = "Early concept art. The final art will be made by professional artists, funded by our Kickstarter.";
+const shotNote = (withArt) => `<p class="shot-note">Screenshots are from the app in testing.${withArt ? " " + ART_LINE : ""}</p>`;
 
 // ---------- Welcome ----------
 const welcome = page({
@@ -102,13 +103,13 @@ const welcome = page({
         <h2 id="ks-title">Free for players, always.</h2>
       </div>
       <div class="ch-body">
-        <p>Campaign Hall comes to Kickstarter in early 2027. Backing it pays for what a small app needs before it opens to everyone. The art you see today is AI-generated concept art, to be redone by human artists, and part of what we raise pays for them.</p>
+        <p>Campaign Hall comes to Kickstarter in early 2027. Backing it pays for what a small app needs before it opens to everyone.</p>
         <p>Before then, a closed beta opens for game masters. Campaign Hall launches in the US first. Other countries follow after legal checks.</p>
       </div>
     </div>
   </section>
 ${followBlock}
-  <div class="wrap">${shotNote}</div>`,
+  <div class="wrap">${shotNote(true)}</div>`,
 });
 
 // ---------- Features ----------
@@ -203,9 +204,9 @@ ${feature("ai", "AI helpers · adults 18+", "AI does the GM's homework.", `
         <li><span class="soon">Coming</span><strong>Plan my turn.</strong><span>Line up your next move while everyone else takes theirs, so your turn is quick.</span></li>
         <li><span class="soon">Coming</span><strong>Catch up on a missed session.</strong><span>Missed game night? See what happened while you were away before you sit back down.</span></li>
         <li><span class="soon">Coming</span><strong>The Ember Road.</strong><span>A ready-to-run practice adventure, with battle maps, so new GMs and players can learn the ropes together.</span></li>
-        <li><span class="soon">Coming</span><strong>Art by human artists.</strong><span>The art in Campaign Hall today is AI-generated concept art, to be redone by human artists. Part of what we raise on Kickstarter pays for them.</span></li>
+        <li><span class="soon">Coming</span><strong>Art by professional artists.</strong><span>Early concept art. The final art will be made by professional artists, funded by our Kickstarter.</span></li>
         <li><span class="soon">Coming</span><strong>Beyond the US.</strong><span>Campaign Hall launches in the US first. Other countries follow after legal checks.</span></li>
-        <li class="ch-stretch"><span class="soon">If funded</span><strong>Kickstarter stretch goals.</strong><span>If the Kickstarter reaches its stretch goals: a Family Safety Review of kids' seats, so kids' seats get a careful safety and privacy check; <em>The Bard comes to life</em> (animated, by a human artist); more art by human artists; and translation.</span></li>
+        <li class="ch-stretch"><span class="soon">If funded</span><strong>Kickstarter stretch goals.</strong><span>If the Kickstarter reaches its stretch goals: a Family Safety Review of kids' seats, so kids' seats get a careful safety and privacy check; <em>The Bard comes to life</em> (animated, by a professional artist); more art by professional artists; and translation.</span></li>
       </ul>
     </div>
   </section>
@@ -223,7 +224,7 @@ ${feature("ai", "AI helpers · adults 18+", "AI does the GM's homework.", `
     </div>
   </section>
 ${followBlock}
-  <div class="wrap">${shotNote}</div>`,
+  <div class="wrap">${shotNote(false)}</div>`,
 });
 
 mkdirSync("campaign-hall/features", { recursive: true });
