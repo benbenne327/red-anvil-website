@@ -208,6 +208,13 @@ a:focus-visible, .btn:focus-visible { outline: 3px solid var(--flame); outline-o
 .ch-ai-you { border-color: var(--hall-gold); color: #fff; }
 .ch-ai-you span { background: var(--hall-gold); color: #1a1405; }
 .hall-link { margin-top: 18px; }
+.ch-coming { background: #0e171f; }
+.ch-coming-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 16px; }
+.ch-coming-grid li { border: 1px dashed rgba(227, 185, 85, .45); border-radius: 16px; padding: 20px 22px; display: grid; gap: 6px; align-content: start; }
+.ch-coming-grid strong { color: #fff; font-size: 1.0625rem; }
+.ch-coming-grid span:not(.soon) { color: #c3cace; font-size: .9688rem; }
+.soon { justify-self: start; font-family: var(--mono); font-size: .75rem; letter-spacing: .1em; text-transform: uppercase; color: #1a1405; background: var(--hall-gold); border-radius: 999px; padding: 3px 10px; }
+.ch-more { display: flex; flex-wrap: wrap; gap: 12px; }
 
 /* Responsive */
 @media (max-width: 900px) {
@@ -229,6 +236,7 @@ a:focus-visible, .btn:focus-visible { outline: 3px solid var(--flame); outline-o
   .hall-art { grid-template-columns: repeat(2, 1fr); }
   .hero .actions .btn, .hall-bottom .btn, .ch-hero .actions .btn, .ch-more .btn { width: 100%; }
   .ch-feature-shots .shot { width: 100%; }
+  .ch-coming-grid { grid-template-columns: 1fr; }
   .ch-feature-shots { flex-direction: column; align-items: center; }
   .ch-feature-shots .shot + .shot { margin-top: 0; }
   .ch-hero-shot { width: min(86%, 320px); }
