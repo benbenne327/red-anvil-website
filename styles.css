@@ -214,6 +214,8 @@ a:focus-visible, .btn:focus-visible { outline: 3px solid var(--flame); outline-o
 .ch-coming-grid strong { color: #fff; font-size: 1.0625rem; }
 .ch-coming-grid span:not(.soon) { color: #c3cace; font-size: .9688rem; }
 .soon { justify-self: start; font-family: var(--mono); font-size: .75rem; letter-spacing: .1em; text-transform: uppercase; color: #1a1405; background: var(--hall-gold); border-radius: 999px; padding: 3px 10px; }
+.ch-stretch { border-style: solid !important; background: rgba(227, 185, 85, .06); }
+.ch-stretch .soon { background: transparent; color: var(--hall-gold); border: 1px solid var(--hall-gold); }
 .ch-more { display: flex; flex-wrap: wrap; gap: 12px; }
 
 /* Responsive */

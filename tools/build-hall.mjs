@@ -6,7 +6,7 @@ import { head, header, footer, hallPills } from "./site-chrome.mjs";
 
 const SITE = "https://redanvildigital.com";
 const TAGLINE = "The easy way to run and play tabletop RPGs at your table.";
-const KICKSTARTER = "Kickstarter · Feb 2 – Mar 4, 2027";
+const KICKSTARTER = "Kickstarter · early 2027";
 
 const social = (url, title, description) => `
 <meta property="og:type" content="website">
@@ -49,7 +49,7 @@ const followBlock = `
     </div>
   </section>`;
 
-const shotNote = `<p class="shot-note">Screenshots are from the app in testing. Character portraits and artwork are AI-generated concept art, and human artists will redo them.</p>`;
+const shotNote = `<p class="shot-note">Screenshots are from the app in testing. Character portraits and artwork are AI-generated concept art, to be redone by human artists.</p>`;
 
 // ---------- Welcome ----------
 const welcome = page({
@@ -102,8 +102,8 @@ const welcome = page({
         <h2 id="ks-title">Free for players, always.</h2>
       </div>
       <div class="ch-body">
-        <p>Campaign Hall comes to Kickstarter in early 2027, from February 2 to March 4. Backing it pays for what a small app needs before it opens to everyone, including human artists to replace the concept art.</p>
-        <p>Before then, a closed beta opens for game masters. Campaign Hall launches in the US first, with other countries to follow.</p>
+        <p>Campaign Hall comes to Kickstarter in early 2027. Backing it pays for what a small app needs before it opens to everyone. The art you see today is AI-generated concept art, to be redone by human artists, and part of what we raise pays for them.</p>
+        <p>Before then, a closed beta opens for game masters. Campaign Hall launches in the US first. Other countries follow after legal checks.</p>
       </div>
     </div>
   </section>
@@ -160,7 +160,7 @@ ${feature("characters", "Characters", "A guided character builder.", `
         <ul class="ch-list">
           <li>Class, background, species, ability scores, skills, and gear, one step at a time.</li>
           <li>Each choice shows what it does before you pick it.</li>
-          <li>Ready today for 5E rules. More game systems are on the way.</li>
+          <li>Ready today for one rules set. More game systems are on the way.</li>
         </ul>`,
   shot("builder", "The character builder on a phone: a level 3 Hill Dwarf Fighter choosing a fighting style, with Dueling selected.", 640, 1182))}
 ${feature("invite", "Invite", "One link brings the party in.", `
@@ -199,13 +199,14 @@ ${feature("ai", "AI helpers · adults 18+", "AI does the GM's homework.", `
         <p>Everything above works today. These are on the way. None of them are ready yet, and we won't put dates on them until we can keep them.</p>
       </div>
       <ul class="ch-coming-grid">
-        <li><span class="soon">Coming</span><strong>More game systems.</strong><span>Guided builders and full play for more rule sets, starting with Pathfinder Second Edition and then 3.5.</span></li>
-        <li><span class="soon">Coming</span><strong>Family seats for kids.</strong><span>Kids join the family game in their own seat. First comes our Family Safety Review: a professional safety and privacy review of kids' seats, so families can use them with confidence.</span></li>
+        <li><span class="soon">Coming</span><strong>Several game systems.</strong><span>Guided builders and full play for several game systems, not just one.</span></li>
+        <li><span class="soon">Coming</span><strong>A Family Safety Review of kids' seats.</strong><span>A professional safety and privacy review of kids' seats, so families can use them with confidence.</span></li>
         <li><span class="soon">Coming</span><strong>Plan my turn.</strong><span>Line up your next move while everyone else takes theirs, so your turn is quick.</span></li>
         <li><span class="soon">Coming</span><strong>Catch up on a missed session.</strong><span>Missed game night? See what happened while you were away before you sit back down.</span></li>
-        <li><span class="soon">Coming</span><strong>The Bard, with music.</strong><span>Meet the Bard, your guide at the table. He welcomes new players and shows them around, and he'll bring music to set the mood. Kickstarter stretch goal: <em>The Bard comes to life</em>, drawn by our artist and animated.</span></li>
         <li><span class="soon">Coming</span><strong>The Ember Road.</strong><span>A ready-to-run practice adventure, with battle maps, so new GMs and players can learn the ropes together.</span></li>
-        <li><span class="soon">Coming</span><strong>Art by human artists.</strong><span>The art in Campaign Hall today is AI-generated concept art. Part of what we raise on Kickstarter hires human artists to replace it, starting with the Bard.</span></li>
+        <li><span class="soon">Coming</span><strong>Art by human artists.</strong><span>The art in Campaign Hall today is AI-generated concept art, to be redone by human artists. Part of what we raise on Kickstarter pays for them.</span></li>
+        <li><span class="soon">Coming</span><strong>Beyond the US.</strong><span>Campaign Hall launches in the US first. Other countries follow after legal checks.</span></li>
+        <li class="ch-stretch"><span class="soon">If funded</span><strong>Kickstarter stretch goals.</strong><span>If the Kickstarter reaches its stretch goals: <em>The Bard comes to life</em> (our artist's Bard, animated), more art by human artists, and translation.</span></li>
       </ul>
     </div>
   </section>
@@ -217,7 +218,7 @@ ${feature("ai", "AI helpers · adults 18+", "AI does the GM's homework.", `
         <h2 id="free-title">Still in the forge.</h2>
       </div>
       <div class="ch-body">
-        <p>Campaign Hall is still being built, so features may change. A closed beta for game masters opens soon, and the Kickstarter runs from February 2 to March 4, 2027. Campaign Hall launches in the US first.</p>
+        <p>Campaign Hall is still being built, so features may change. A closed beta for game masters opens soon, and the Kickstarter comes in early 2027. Campaign Hall launches in the US first, and other countries follow after legal checks.</p>
         <p><a class="btn btn-gold" href="/campaign-hall/">Back to Campaign Hall</a></p>
       </div>
     </div>
