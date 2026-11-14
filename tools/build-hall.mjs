@@ -200,13 +200,12 @@ ${feature("ai", "AI helpers · adults 18+", "AI does the GM's homework.", `
       </div>
       <ul class="ch-coming-grid">
         <li><span class="soon">Coming</span><strong>Several game systems.</strong><span>Guided builders and full play for several game systems, not just one.</span></li>
-        <li><span class="soon">Coming</span><strong>A Family Safety Review of kids' seats.</strong><span>A professional safety and privacy review of kids' seats, so families can use them with confidence.</span></li>
         <li><span class="soon">Coming</span><strong>Plan my turn.</strong><span>Line up your next move while everyone else takes theirs, so your turn is quick.</span></li>
         <li><span class="soon">Coming</span><strong>Catch up on a missed session.</strong><span>Missed game night? See what happened while you were away before you sit back down.</span></li>
         <li><span class="soon">Coming</span><strong>The Ember Road.</strong><span>A ready-to-run practice adventure, with battle maps, so new GMs and players can learn the ropes together.</span></li>
         <li><span class="soon">Coming</span><strong>Art by human artists.</strong><span>The art in Campaign Hall today is AI-generated concept art, to be redone by human artists. Part of what we raise on Kickstarter pays for them.</span></li>
         <li><span class="soon">Coming</span><strong>Beyond the US.</strong><span>Campaign Hall launches in the US first. Other countries follow after legal checks.</span></li>
-        <li class="ch-stretch"><span class="soon">If funded</span><strong>Kickstarter stretch goals.</strong><span>If the Kickstarter reaches its stretch goals: <em>The Bard comes to life</em> (our artist's Bard, animated), more art by human artists, and translation.</span></li>
+        <li class="ch-stretch"><span class="soon">If funded</span><strong>Kickstarter stretch goals.</strong><span>If the Kickstarter reaches its stretch goals: a Family Safety Review of kids' seats, so kids' seats get a careful safety and privacy check; <em>The Bard comes to life</em> (animated, by a human artist); more art by human artists; and translation.</span></li>
       </ul>
     </div>
   </section>
