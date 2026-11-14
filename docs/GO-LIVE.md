@@ -1,7 +1,7 @@
 # Go-live and rollback notes
 
 ## The old site (keep recoverable)
-- Source and git history: `C:\Users\benbe\.codex\visualizations\2026\09\02\01a06454-b690-7182-846a-6ab7e9b4e77f\red-anvil-site`
+- Source and git history: kept on the studio PC (path in the private notes).
 - Still served at: https://red-anvil-digital-works.russet-rat-2671.chatgpt.site/
 - Porkbun DNS records that point the domain at it (as of 14 Nov 2026):
   - A  @  162.159.143.30  (TTL 600)
