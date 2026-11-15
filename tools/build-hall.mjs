@@ -42,7 +42,7 @@ const followBlock = `
     <div class="wrap">
       <div class="section-head">
         <p class="eyebrow">Follow along</p>
-        <h2 id="follow-title">News, previews, and the Kickstarter launch.</h2>
+        <h2 id="follow-title">News, previews, and Kickstarter updates.</h2>
       </div>
       ${hallPills()}
       <p class="ch-ask">Questions, press, or Kickstarter? <a href="mailto:info@redanvildigital.com?subject=Campaign%20Hall">info@redanvildigital.com</a></p>
@@ -103,7 +103,7 @@ const welcome = page({
         <h2 id="ks-title">Free for players, always.</h2>
       </div>
       <div class="ch-body">
-        <p>Campaign Hall comes to Kickstarter in early 2027. Backing it pays for what a small app needs before it opens to everyone.</p>
+        <p>Campaign Hall comes to Kickstarter in early 2027. Campaign Hall is made by Red Anvil Digital Works, a one-person studio in Florida. Backing it helps get Campaign Hall ready to open to everyone, including professional artists for the final art.</p>
         <p>Before then, a closed beta opens for game masters. Campaign Hall launches in the US first. Other countries follow after legal checks.</p>
       </div>
     </div>
@@ -136,7 +136,7 @@ const features = page({
       <div class="ch-hero-copy">
         <p class="eyebrow">Campaign Hall features</p>
         <h1 class="ch-tagline">${TAGLINE}</h1>
-        <p class="ch-lede">Here's what Campaign Hall does today. The GM uses a phone, tablet, or laptop, and players use their own phones. No downloads.</p>
+        <p class="ch-lede">Here's what Campaign Hall does today. The GM uses a phone, tablet, or laptop, and players use their own phones. Nothing to install.</p>
         <nav class="ch-jump" aria-label="Features on this page">
           <a href="#fights">Fights</a><a href="#dice">Dice</a><a href="#characters">Characters</a><a href="#invite">Invite</a><a href="#gm-tools">GM tools</a><a href="#ai">AI helpers</a><a href="#coming">Coming</a>
         </nav>
