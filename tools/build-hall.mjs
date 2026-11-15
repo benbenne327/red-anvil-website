@@ -103,7 +103,7 @@ const welcome = page({
         <h2 id="ks-title">Free for players, always.</h2>
       </div>
       <div class="ch-body">
-        <p>Campaign Hall comes to Kickstarter in early 2027. Campaign Hall is made by Red Anvil Digital Works, a one-person studio in Florida. Backing it helps get Campaign Hall ready to open to everyone, including professional artists for the final art.</p>
+        <p>Campaign Hall comes to Kickstarter in early 2027. It's made by Red Anvil Digital Works, a one-person studio in Florida. Backing the campaign helps get the app ready to open to everyone, and pays professional artists to make the final art.</p>
         <p>Before then, a closed beta opens for game masters. Campaign Hall launches in the US first. Other countries follow after legal checks.</p>
       </div>
     </div>
