@@ -160,7 +160,7 @@ ${feature("characters", "Characters", "A guided character builder.", `
         <ul class="ch-list">
           <li>Class, background, species, ability scores, skills, and gear, one step at a time.</li>
           <li>Each choice shows what it does before you pick it.</li>
-          <li>Ready today for one rules set. More game systems are on the way.</li>
+          <li>Ready today for fifth edition, 2014 and 2024 rules. More games come after launch.</li>
         </ul>`,
   shot("builder", "The character builder on a phone: a level 3 Hill Dwarf Fighter choosing a fighting style, with Dueling selected.", 640, 1182))}
 ${feature("invite", "Invite", "One link brings the party in.", `
@@ -199,7 +199,7 @@ ${feature("ai", "AI helpers · adults 18+", "AI does the GM's homework.", `
         <p>Everything above works today. These are on the way. None of them are ready yet, and I won't put dates on them until I can keep them.</p>
       </div>
       <ul class="ch-coming-grid">
-        <li><span class="soon">Coming</span><strong>Several game systems.</strong><span>Guided builders and full play for several game systems, not just one.</span></li>
+        <li><span class="soon">Coming</span><strong>More games after launch.</strong><span>Fifth edition comes first. Other game systems follow after launch, one at a time.</span></li>
         <li><span class="soon">Coming</span><strong>Plan my turn.</strong><span>Line up your next move while everyone else takes theirs, so your turn is quick.</span></li>
         <li><span class="soon">Coming</span><strong>Catch up on a missed session.</strong><span>Missed game night? See what happened while you were away before you sit back down.</span></li>
         <li><span class="soon">Coming</span><strong>The Ember Road.</strong><span>A ready-to-run practice adventure, with battle maps, so new GMs and players can learn the ropes together.</span></li>
